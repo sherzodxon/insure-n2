@@ -1,0 +1,22 @@
+.hamburger{
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border:  2px solid $dark;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: none;
+}
+.hamburger--close{
+    background-image: url('../../img/hamburger--close.png');
+   
+}
+.hamburger--open{
+    background-image: url('../../img/hamburger--open.svg');
+}
+
+@media only screen and (max-width:590px){
+    .hamburger{
+        display: inline-block;
+    }
+}

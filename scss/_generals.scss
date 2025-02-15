@@ -11,3 +11,17 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+body{
+    font-family: "Karla";
+    overflow-x: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+ul,ol{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-family: "Karla";
+}

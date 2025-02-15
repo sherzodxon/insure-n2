@@ -11,3 +11,143 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body {
+  font-family: "Karla";
+  overflow-x: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Karla";
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.plans-link {
+  padding: 10px 20px;
+  transition: 500ms;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+.plans-link:hover {
+  background-color: white;
+  color: rgb(45, 38, 65);
+}
+
+.plans-link--dark {
+  padding: 10px 20px;
+  border: 2px solid rgb(44, 40, 48);
+  color: rgb(44, 40, 48);
+}
+.plans-link--dark:hover {
+  background-color: rgb(44, 40, 48);
+  color: white;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+  margin-right: 20px;
+}
+
+.header__item-link {
+  color: rgb(131, 125, 136);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.2px;
+  letter-spacing: 1.5px;
+}
+.header__item-link:hover {
+  color: rgb(44, 40, 48);
+}
+
+@media only screen and (max-width: 590px) {
+  .header__nav {
+    display: none;
+    position: absolute;
+    background-color: rgb(44, 40, 48);
+    top: 62px;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    height: calc(100vh - 62px);
+  }
+  .header__nav--active {
+    display: block;
+  }
+  .header__link {
+    color: #fff;
+  }
+  .header__list {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .header__item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .header__plans-link {
+    border: 2px solid white;
+    color: white;
+    padding: 10px 50px;
+  }
+}
+.hamburger {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 2px solid rgb(44, 40, 48);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+
+.hamburger--close {
+  background-image: url("../../img/hamburger--close.png");
+}
+
+.hamburger--open {
+  background-image: url("../../img/hamburger--open.svg");
+}
+
+@media only screen and (max-width: 590px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
